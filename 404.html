@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Página não encontrada · Oppus ERP</title>
+  <meta name="description" content="Esta página não existe ou mudou de endereço. Volte para o início do site do Oppus ERP.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#f4efe6">
+  <!-- O GitHub Pages serve este arquivo em qualquer endereço inexistente, por isso os caminhos começam com "/". -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/" aria-label="Oppus ERP, página inicial">
+        <img src="/assets/img/logo.svg" alt="Oppus" width="965" height="287">
+      </a>
+      <a class="btn btn-ink btn-sm" href="/#contato" style="margin-left:auto">Falar com a gente</a>
+    </div>
+  </header>
+
+  <main class="nf404">
+    <div class="wrap nf404-grid">
+      <div>
+        <p class="eyebrow">Erro 404</p>
+        <h1 class="display">Essa página foi <span class="accent">rejeitada.</span></h1>
+        <p class="lede">O endereço não existe ou mudou de lugar. Igual nota com cadastro errado: corrige e reenvia.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/">Voltar ao início
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="/#faq">Ver dúvidas frequentes</a>
+        </div>
+      </div>
+
+      <div class="ticket nf404-ticket" aria-hidden="true">
+        <div class="ticket-head">
+          <div>
+            <div class="ticket-kind">Retorno do servidor</div>
+            <div class="ticket-no">Rejeição 404</div>
+            <div class="ticket-who" id="nf404-path">/endereco-digitado</div>
+          </div>
+          <span class="pill bad">Rejeitada</span>
+        </div>
+        <ul class="lines">
+          <li><span class="d">Motivo</span><span class="v">Página não encontrada</span></li>
+          <li><span class="d">Protocolo</span><span class="v" id="nf404-proto">000000000000000</span></li>
+          <li><span class="d">Correção sugerida</span><span class="v">Voltar ao início</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var p = document.getElementById('nf404-path');
+      p.textContent = location.pathname.length > 38 ? location.pathname.slice(0, 36) + '…' : location.pathname;
+      document.getElementById('nf404-proto').textContent = String(Date.now()).padStart(15, '4');
+    })();
+  </script>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
